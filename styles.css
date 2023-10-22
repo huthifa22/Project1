@@ -87,6 +87,83 @@
 
 /* LANGUAGES STYLING SHEET*/
 
+.topBar{ /* An optional addition to give a modern feel */
+    z-index: -1; /* sets the bar to the background to not cover elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 80px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 3px;
+    background-color: rgb(74, 107, 204); /* Color subject to change. Just place holder */
+}
+
+.langText{
+    position: relative;
+    background-color: beige;
+    text-align: left;
+    top: 30px;
+    left: 150px;
+    width: 1000px;
+}
+
+.programLang ul {
+    /* Setting up a grid to generate all tiles in ul */
+    position: absolute;
+    display: grid;    
+    grid-template-columns: auto auto auto; /* sets up the spacing between blocks */
+    gap: 10px 10px;
+    border:  1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    background-color: white;
+    padding: 10px;
+    left: 150px;
+    bottom:0;
+    width: 630px; 
+}
+
+.programLang ul li {
+    list-style: none;
+    height: 150px;
+    width: 800;
+    top: 0;
+    right: 0;
+    background-color: gray; /* This is a background fall back if no images are loaded*/
+}
+
+.programLang p {
+    margin-top: 65px;
+    font-size: 18px;
+    
+}
+
+.programLang a {
+    display:inline-block;
+    /* The height and width mimic the grid to have a large anchor button */
+    width: 200px;
+    height:150px;
+    color:black;
+    text-decoration: none;
+}
+
+.programLang a:hover{
+    opacity: .5;
+}
+
+/* ID values to further alter the tiles. Ex. Giving them images
+#java {}
+#python{}
+#cPlus{}
+#HTML{}
+#ect{}
+*/
+
+
+
+
+
 
 
 /* SIGN UP SHEET STYLING*/
