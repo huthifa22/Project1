@@ -1,31 +1,26 @@
-body {
+/* Main page / SideBar */
+.main-body {
     font-family: Arial, sans-serif;
     padding-top: 20px; /* Top spacing */
     text-align: center; 
-    background-color: white;
+    background-color: white ;
 }
-
-.logo {
+.main-logo {
     font-size: 32px; 
     font-weight: bold;
     padding-left: 140px;
 }
-
-.login {
+.main-login {
     position: absolute; 
     top: 10px; 
     right: 20px;
-    text-decoration: underline;
     font-size: 18px;
 }
-
-.login a {
+.main-login-link {
     margin-left: 10px;
-    text-decoration: none;
     color: #333;
 }
-
-.sidebar {
+.main-sidebar {
     width: 180px;  
     height: 900px; /*Height of bar*/
     background-color: #0b0b0b;  
@@ -33,19 +28,139 @@ body {
     top: 0; /*Keeps top and left edge stay*/
     left: 0;
 }
-
-.sidebar ul {
+.main-sidebar-list {
     list-style-type: none;  
     padding: 20px;  
 }
-
-.sidebar ul li {
+.main-sidebar-list li {
     padding: 15px; 
+    text-align: left;  
 }
 
-.sidebar ul li a {
+.main-sidebar-list a {
     text-decoration: none;  /* Remove underline from link */
     color: #ecf0f1; 
     font-size: 20px;
     font-weight: 500;
+}
+
+/* Languages Styling */
+
+
+
+/* SIGN UP SHEET STYLING*/
+
+body, h1 {
+    margin: 0; 
+    padding: 0; 
+}
+
+body.signup-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-top: 100px; 
+    padding-left: 190px;
+    height: 100vh;
+}
+.signup-form {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+.signup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.signup-field {
+    margin-bottom: 20px;
+}
+.signup-label {
+    display: block;
+}
+.signup-already-account {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px; 
+}
+.signin-link {
+    color: #007BFF; 
+    text-decoration: none;
+}
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: #FFF;
+    cursor: pointer;
+}
+/* Making box longer for text types, email, and password types */
+.signup-form input[type="text"],
+.signup-form input[type="password"], 
+.signup-form input[type="email"] {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+
+/* SIGN IN SHEET STYLING*/
+
+body.signin-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+    padding-top: 100px;  
+    padding-left: 190px;
+    height: 100vh;
+}
+.signin-form {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+.signin-title {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.signin-field {
+    margin-bottom: 20px;
+}
+.signin-label {
+    display: block;
+}
+.signin-no-account {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px; 
+}
+.signup-link {
+    color: #007BFF; 
+    text-decoration: none;
+}
+.signin-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: #FFF;
+    cursor: pointer;
+}
+/* Making box longer for email types and password types */
+.signin-form input[type="email"], .signin-form input[type="password"] {
+    width: 100%; 
+    box-sizing: border-box; 
 }

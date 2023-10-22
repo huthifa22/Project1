@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <head>
-    <title>SignIn</title>
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+
+<body class="signin-body">
+    <h1 class="signin-title">Sign In</h1>
+    <form class="signin-form" method="POST" action="sample.php">
+   
+       <div class="signin-field">
+          <label class="signin-label"> Email:</label>
+          <input type="email" name="email" id="signin-email" required>
+       </div>
+
+       <div class="signin-field">
+          <label class="signin-label"> Password:</label>
+          <input type="password" name="password" id="signin-password" required>
+       </div>
+
+       <div class="signin-no-account">
+         Don't have an account? <a href="sign-up.html" class="signin-link">Sign Up</a>
+        </div>
+
+       <div class="signin-button-container"> 
+          <input type="submit" value="Sign In" class="signin-button"> 
+       </div>
+
+       <div class="main-sidebar">
+         <ul class="main-sidebar-list">
+             <li><a href="CodeRecall.html">Recall</a></li>
+             <li><a href="languages.html">Languages</a></li>
+             <li><a href="test.html">Test Skills</a></li>
+         </ul>
+     </div>
+   
+   </form>
 </body>
