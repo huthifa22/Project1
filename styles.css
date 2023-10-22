@@ -4,6 +4,7 @@
     padding-top: 20px; /* Top spacing */
     text-align: center; 
     background-color: #ffffff ;
+    align-items: center;
 }
 .main-logo {
     font-size: 34px; 
@@ -27,7 +28,7 @@
 .main-sidebar {
     width: 120px;  
     height: 900px; /*Height of bar*/
-    background-color: #0b0b0b;  
+    background-color: black;  
     position: fixed; /*Left align bar*/
     top: 0; /*Keeps top and left edge stay*/
     left: 0;
@@ -50,12 +51,41 @@
 .hamburger {
     font-size: 24px;
     cursor: pointer;
-    padding: 10px;
-    color: #ecf0f1;
+    color: white; 
+    background-color: black;
+    border: none; 
+    padding: 10px; 
     position: fixed;
+    left: 0;
 }
 
-/* LANGUAGES STYLING */
+
+
+/* MAIN CONTENT HOMEPAGE */
+
+.main-content {
+    padding-left: 140px;  
+    padding-top: 20px; 
+    padding-right: 10px; 
+    justify-content: center;
+}
+.main-about-section {
+    text-align: left;
+    padding-left: 20px;
+}
+.about-us-p{
+    text-align: left;
+    padding-left: 20px;
+}
+.about-us{
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+
+
+/* LANGUAGES STYLING SHEET*/
 
 
 
