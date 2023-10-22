@@ -3,12 +3,15 @@
     font-family: Arial, sans-serif;
     padding-top: 20px; /* Top spacing */
     text-align: center; 
-    background-color: white ;
+    background-color: #ffffff ;
 }
 .main-logo {
-    font-size: 32px; 
-    font-weight: bold;
-    padding-left: 140px;
+    font-size: 34px; 
+    font-weight: 500;
+    padding-left: 110px;
+    color:black; 
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
 }
 .main-login {
     position: absolute; 
@@ -19,9 +22,10 @@
 .main-login-link {
     margin-left: 10px;
     color: #333;
+    text-decoration:none;
 }
 .main-sidebar {
-    width: 180px;  
+    width: 152px;  
     height: 900px; /*Height of bar*/
     background-color: #0b0b0b;  
     position: fixed; /*Left align bar*/
@@ -40,11 +44,11 @@
 .main-sidebar-list a {
     text-decoration: none;  /* Remove underline from link */
     color: #ecf0f1; 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
-/* Languages Styling */
+/* LANGUAGES STYLING */
 
 
 
@@ -62,7 +66,7 @@ body.signup-body {
     align-items: center;
     justify-content: flex-start; 
     padding-top: 100px; 
-    padding-left: 190px;
+    padding-left: 140px;
     height: 100vh;
 }
 .signup-form {
@@ -120,7 +124,7 @@ body.signin-body {
     align-items: center;
     justify-content: flex-start;  
     padding-top: 100px;  
-    padding-left: 190px;
+    padding-left: 140px;
     height: 100vh;
 }
 .signin-form {
