@@ -10,7 +10,7 @@
     font-size: 29px; 
     font-weight: 500;
     padding-left: 110px;
-    color:white; 
+    color:black; 
     text-shadow: 1px 1px 2px black;
     letter-spacing: 2px;
 }
@@ -22,7 +22,7 @@
 }
 .main-login-link {
     margin-left: 10px;
-    color: white;
+    color: black;
     text-decoration:none;
 }
 .main-sidebar {
@@ -35,7 +35,7 @@
 }
 .main-sidebar-list {
     list-style-type: none;  
-    padding: 90px 5px 20px 0px;/* top right bottom left */
+    padding: 60px 5px 20px 0px;/* top right bottom left */
 }
 .main-sidebar-list li {
     padding: 15px; 
@@ -55,7 +55,7 @@
     background-color: black;
     border: none; 
     padding: 10px; 
-    padding-top: 55px;
+    padding-top: 30px;
     position: fixed;
     left: 0;
 }
