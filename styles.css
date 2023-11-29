@@ -102,16 +102,20 @@
 
 .langText{
     position: relative;
-    background-color: beige;
     text-align: left;
     top: 30px;
     left: 150px;
     width: 1000px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .programLang ul {
     /* Setting up a grid to generate all tiles in ul */
-    position: absolute;
+    position: relative;
     display: grid;    
     grid-template-columns: auto auto auto; /* sets up the spacing between blocks */
     gap: 10px 10px;
@@ -121,7 +125,7 @@
     background-color: white;
     padding: 10px;
     left: 150px;
-    bottom:0;
+    bottom:-50px;
     width: 630px; 
 }
 
