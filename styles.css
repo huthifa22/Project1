@@ -86,6 +86,7 @@
 
 
 
+
 /* LANGUAGES STYLING SHEET*/
 
 .topBar{ /* An optional addition to give a modern feel */
@@ -191,7 +192,7 @@ body.signup-body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; 
-    padding-top: 110px; 
+    padding-top: 95px; 
     padding-left: 110px;
     height: 100vh;
 }
@@ -230,6 +231,7 @@ body.signup-body {
     background-color: #0f0f0f;
     color: #FFF;
     cursor: pointer;
+    font-size: 16px;
 }
 /* Making box longer for text types, email, and password types */
 .signup-form input[type="text"],
@@ -237,7 +239,19 @@ body.signup-body {
 .signup-form input[type="email"] {
     width: 100%; 
     box-sizing: border-box; 
+    margin-top: 5px;
+    height: 25px; 
+    border-radius: 3px;
 }
+input.error {
+    border: 2px solid red;
+}
+.error-messages {
+    color: red; 
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
 
 
 
@@ -288,9 +302,13 @@ body.signin-body {
     background-color: #0f0f0f;
     color: #FFF;
     cursor: pointer;
+    font-size: 16px;
 }
 /* Making box longer for email types and password types */
 .signin-form input[type="email"], .signin-form input[type="password"] {
     width: 100%; 
     box-sizing: border-box; 
+    margin-top: 5px;
+    height: 25px; 
+    border-radius: 3px;
 }
