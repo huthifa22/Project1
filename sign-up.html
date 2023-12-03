@@ -6,32 +6,34 @@
 
 <body class="signup-body">
     <h1 class="signup-title">Sign Up</h1>
-    <form class="signup-form" method="POST" action="sample.php">
+    <form class="signup-form" id="signup-form" method="POST" action="sample.php" novalidate>
  
        <div class="signup-field">
           <label class="signup-label"> First name:</label>
-          <input type="text" name="firstname" id="signup-firstname" required>
+          <input type="text" name="firstname" id="signup-firstname" >
        </div>
 
        <div class="signup-field">
           <label class="signup-label"> Last name:</label>
-          <input type="text" name="lastname" id="signup-lastname" required>
+          <input type="text" name="lastname" id="signup-lastname" >
        </div>
    
        <div class="signup-field">
           <label class="signup-label"> Email:</label>
-          <input type="email" name="email" id="signup-email" required>
+          <input type="email" name="email" id="signup-email" >
        </div>
 
        <div class="signup-field">
           <label class="signup-label"> Password:</label>
-          <input type="password" name="password" id="signup-password" required>
+          <input type="password" name="password" id="signup-password" >
        </div>
 
        <div class="signup-field">
           <label class="signup-label"> Re-Enter Password:</label>
-          <input type="password" name="password2" id="signup-password2" required>
+          <input type="password" name="password2" id="signup-password2" >
        </div>
+
+       <div id="formErrorsSignUp" class="error-messages"></div>
 
        <div class="signup-already-account">
         Already have an account? <a href="sign-in.html" class="signin-link">Sign In</a>
@@ -51,4 +53,5 @@
     </div>
    
    </form>
+   <script src="regex.js"></script>
 </body>
