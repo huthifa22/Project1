@@ -1,0 +1,11 @@
+1) Project Website folder must be in xampp -> htdocs -> "Put folder in here"
+2)XAMMP control panel both MySQL and Apache must be started
+3)  go to "Enviroment Variables" on windows, then "path", then edit, then "new". 
+4)Add 2 new paths after xammp directory -> theres 2 files "php" and "phpmyadmin" click on 1 at a time and add both directories to enviroment path
+
+5) On google go to http://localhost/phpmyadmin
+6) On left click "New" and make data base name called "user_db" and hit create
+7) At the top click "import" and import the "users.sql". Might take a little bit of time.
+8) You now must run the main page or any of the HTML on LocalHost like this  "http://localhost/Project%20website/Project1/sign-up.html"
+     Make sure its correct directory
+9)Now you can sign up and sign in
