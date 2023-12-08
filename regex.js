@@ -41,15 +41,13 @@ function validateSignUp() {
         pass.classList.add('error');
     }
     
-
     // Password Match
     if (pass.value !== confirmPass.value) {
-        errList += '<li>Password and confirmation password don’t match</li>';
+        errList += '<li>Password and confirmation password do not match</li>';
         confirmPass.classList.add('error');
     }
 
     var errDiv = document.getElementById("formErrorsSignUp");
-
     var errors = errList.match(/<li>/g);
 
     // If error
@@ -66,6 +64,7 @@ function validateSignUp() {
             var body = document.querySelector('.signup-body');
             body.style.paddingTop = '35px';
         }
+        return false;
     } else {
         errDiv.classList.add('hide');
         firstname.classList.remove('error');
@@ -76,37 +75,46 @@ function validateSignUp() {
 
         var body = document.querySelector('.signup-body');
         body.style.paddingTop = ''; 
+        return true;
     }
 }
 
 function validateSignIn() {
-    var errList = '';
-    var email = document.getElementById("signin-email");
-    var pass = document.getElementById("signin-password");
-
-    //  Email 
-    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/;
-    if (!email.value.match(emailRegex)) {
-        errList += '<li>Invalid or missing email address</li>';
-        email.classList.add('error');
-    }
-
-    // Password Length
-    if (pass.value.length < 1) {
-        errList += '<li>Invalid or missing Password</li>';
-        pass.classList.add('error');
-    }
-
     var errDiv = document.getElementById("formErrorsSignIn");
+    var url = new URLSearchParams(window.location.search);
+    var error = url.get('error');
 
-    // If error
-    if (errList) {
+    // If url has invalid err for signin
+    if (error == 'invalid') {
         errDiv.classList.remove('hide');
-        errDiv.innerHTML = '<ul>' + errList + '</ul>';
+        errDiv.innerHTML = '<ul><li>Invalid email address or password</li></ul>';
+
+        //Clear url err
+        history.replaceState({}, '', 'sign-in.html');
+        return false;
     } else {
         errDiv.classList.add('hide');
-        email.classList.remove('error');
-        pass.classList.remove('error');
+        return true;
+    }
+}
+function displaySignupError() {
+    var errDiv = document.getElementById("formErrorsSignUp");
+    var url = new URLSearchParams(window.location.search);
+    var error = url.get('error');
+
+    // If url has email in use err or fail
+    if (error == 'email_in_use') {
+        errDiv.classList.remove('hide');
+        errDiv.innerHTML = '<ul><li>Email is already in use</li></ul>';
+        // Remove url error
+        history.replaceState({}, '', 'sign-up.html');
+    } else if (error == 'signup_failed') {
+        errDiv.classList.remove('hide');
+        errDiv.innerHTML = '<ul><li>Signup failed. Please try again.</li></ul>';
+        // Remove url error
+        history.replaceState({}, '', 'sign-up.html');
+    } else {
+        errDiv.classList.add('hide');
     }
 }
 
@@ -115,17 +123,15 @@ document.addEventListener("DOMContentLoaded", function() {
     if (signUpForm) {
         signUpForm.addEventListener("submit", function(event) {
             if (!validateSignUp()) {
-                event.preventDefault();
+                event.preventDefault(); 
             }
         });
+        displaySignupError();
     }
-
     var signInForm = document.getElementById("signin-form");
     if (signInForm) {
+        validateSignIn();
         signInForm.addEventListener("submit", function(event) {
-            if (!validateSignIn()) {
-                event.preventDefault();
-            }
         });
     }
 });

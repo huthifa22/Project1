@@ -22,7 +22,8 @@
 }
 .main-login-link {
     margin-left: 10px;
-    color: black;
+    color: #000000; 
+    font-weight: 600;
     text-decoration:none;
 }
 .main-sidebar {
@@ -222,6 +223,7 @@ body.signup-body {
 .signin-link {
     color: #007BFF; 
     text-decoration: none;
+    font-weight: 700;
 }
 .signup-button {
     width: 100%;
@@ -290,10 +292,6 @@ body.signin-body {
     margin-bottom: 10px;
     font-size: 14px; 
 }
-.signup-link {
-    color: #007BFF; 
-    text-decoration: none;
-}
 .signin-button {
     width: 100%;
     padding: 10px;
@@ -312,3 +310,10 @@ body.signin-body {
     height: 25px; 
     border-radius: 3px;
 }
+/* After login  */
+#userLoggedIn .main-login-link {
+    color: red; 
+    font-weight: 700;
+    text-decoration: underline;
+}
+

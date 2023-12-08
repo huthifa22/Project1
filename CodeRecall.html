@@ -9,8 +9,12 @@
         CodeRecall
     </div>
     <div class="main-login">
-        <a href="sign-in.html" class="main-login-link">Sign In</a>
-        <a href="sign-up.html" class="main-login-link">Sign Up</a>
+        <a href="sign-in.html" class="main-login-link" id="signInLink">Sign In</a>
+        <a href="sign-up.html" class="main-login-link" id="signUpLink">Sign Up</a>
+        <div id="userLoggedIn" style="display: none;">
+            <span id="username"></span>
+            <a href="logout.php" class="main-login-link">Logout</a>
+        </div>
     </div>
     <div class="main-sidebar">
         <button class="hamburger">☰</button>
@@ -25,7 +29,9 @@
         <div class = "about-us">
             <h2 class = "main-about-section">About Us</h2>
             <p class = "about-us-p">  <br> </p>
-            
         </div>
     </div>
+</div>
+<script src="auth.js"></script>
 </body>
+</html>
