@@ -7,11 +7,15 @@
 </head>
 <body class="main-body">
     <div class="main-login">
-        <a href="sign-in.html" class="main-login-link">Sign In</a>
-        <a href="sign-up.html" class="main-login-link">Sign Up</a>
+        <a href="sign-in.html" class="main-login-link" id="signInLink">Sign In</a>
+        <a href="sign-up.html" class="main-login-link" id="signUpLink">Sign Up</a>
+        <div id="userLoggedIn" style="display: none;">
+            <span id="username"></span>
+            <a href="logout.php" class="main-login-link">Logout</a>
+        </div>
     </div>
     <div class="main-sidebar">
-        <div class="hamburger">☰</div>
+        <div class="hamburger">=</div>
         <ul class="main-sidebar-list">
             <li><a href="CodeRecall.html">Recall</a></li>
             <li><a href="languages.html">Languages</a></li>
@@ -67,5 +71,6 @@
         </p>
 
     </div>
-
+    <script src="auth.js"></script>
+    <script src="Hamburger.js"></script>
 </body>

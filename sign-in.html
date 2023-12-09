@@ -6,17 +6,19 @@
 
 <body class="signin-body">
     <h1 class="signin-title">Sign In</h1>
-    <form class="signin-form" method="POST" action="sample.php">
+    <form class="signin-form" id="signin-form" method="POST" action="signin.php" novalidate>
    
        <div class="signin-field">
           <label class="signin-label"> Email:</label>
-          <input type="email" name="email" id="signin-email" required>
+          <input type="email" name="email" id="signin-email">
        </div>
 
        <div class="signin-field">
           <label class="signin-label"> Password:</label>
-          <input type="password" name="password" id="signin-password" required>
+          <input type="password" name="password" id="signin-password">
        </div>
+
+       <div id="formErrorsSignIn" class="error-messages"></div>
 
        <div class="signin-no-account">
          Don't have an account? <a href="sign-up.html" class="signin-link">Sign Up</a>
@@ -27,7 +29,7 @@
        </div>
 
        <div class="main-sidebar">
-         <div class="hamburger">☰</div>
+         <div class="hamburger">=</div>
          <ul class="main-sidebar-list">
              <li><a href="CodeRecall.html">Recall</a></li>
              <li><a href="languages.html">Languages</a></li>
@@ -36,4 +38,6 @@
      </div>
    
    </form>
+   <script src="regex.js"></script>
+   <script src="Hamburger.js"></script>
 </body>
