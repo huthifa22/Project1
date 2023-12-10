@@ -7,7 +7,7 @@
     align-items: center;
 }
 .main-logo {
-    font-size: 29px; 
+    font-size: 40px; 
     font-weight: 500;
     padding-left: 110px;
     color:black; 
@@ -28,7 +28,7 @@
 }
 .main-sidebar {
     width: 118px;  
-    height: 900px; /*Height of bar*/
+    height: 1200px; /*Height of bar*/
     background-color: black;  
     position: fixed; /*Left align bar*/
     top: 0; /*Keeps top and left edge stay*/
@@ -82,16 +82,28 @@
 .main-about-section {
     text-align: left;
     padding-left: 20px;
+    font-size: 34px;
+    color: rgb(191, 31, 31);
+
 }
+
 .about-us-p{
     text-align: left;
     padding-left: 20px;
+    font-size: 23px;
 }
-.about-us{
+.about-us-wrapper {
+    background-color: white; 
+    margin-right: 50px; 
+}
+
+.about-us {
     margin-top: 30px;
     border: 1px solid gray;
     border-radius: 10px;
+    background-color: #ffffff;
 }
+
 
 
 
@@ -352,7 +364,7 @@ body.signin-body {
 }
 /* After login  */
 #userLoggedIn .main-login-link {
-    color: red; 
+    color: rgb(190, 50, 50); 
     font-weight: 700;
     text-decoration: underline;
 }
