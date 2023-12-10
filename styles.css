@@ -192,6 +192,30 @@ margin-bottom: 5px;
 }
 
 
+.questions{
+
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    top: 30px;
+    left: -135px;
+    width: 450px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+
+}
+
+.hide {
+    visibility: hidden;
+}
+
+
+
+
 
 
 
