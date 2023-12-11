@@ -3,17 +3,20 @@
     font-family: Arial, sans-serif;
     padding-top: 20px; /* Top spacing */
     text-align: center; 
-    background-color: #ffffff ;
+    background-color: rgb(255, 255, 255);
     align-items: center;
 }
 .main-logo {
     font-size: 40px; 
     font-weight: 500;
-    padding-left: 110px;
-    color:black; 
-    text-shadow: 1px 1px 2px black;
+    padding-left: 140px;
+    color: rgb(0, 0, 0); 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     letter-spacing: 2px;
+    /* border-bottom: .5px solid rgb(164, 164, 164); */
+    padding-bottom: 5px;
 }
+
 .main-login {
     position: absolute; 
     top: 10px; 
@@ -28,7 +31,7 @@
 }
 .main-sidebar {
     width: 118px;  
-    height: 1200px; /*Height of bar*/
+    height: 100%; /*Height of bar*/
     background-color: black;  
     position: fixed; /*Left align bar*/
     top: 0; /*Keeps top and left edge stay*/
@@ -69,45 +72,146 @@
     display: none; 
 }
 
+/* Dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding-left: 12px;
+    padding-bottom: 7px;
+    padding-top: 9px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+
+}
+.dropdown-content {
+    display: none;
+    border-radius: 8px;
+    background-color: #181414;
+    width: 90px;
+
+}
+.dropdown-content.show {
+    display: block;
+}
 
 
 /* MAIN CONTENT HOMEPAGE */
-
 .main-content {
     padding-left: 140px;  
     padding-top: 20px; 
     padding-right: 10px; 
     justify-content: center;
 }
-.main-about-section {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 34px;
-    color: rgb(191, 31, 31);
 
+.cpp-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 170px;  
+    margin-bottom: 300px;  
+    margin-left: 10px;
 }
-
-.about-us-p{
-    text-align: left;
-    padding-left: 20px;
-    font-size: 23px;
+.python-container {
+    display: flex;
+    align-items: center;
+    margin-top: 180px; 
+    margin-bottom: 300px; 
+    margin-left: 440px;
 }
-.about-us-wrapper {
-    background-color: white; 
-    margin-right: 50px; 
+.HTMLCSS-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 300px; 
+    margin-top: 250px;  
+    margin-left: 440px;
 }
-
-.about-us {
-    margin-top: 30px;
-    border: 1px solid gray;
-    border-radius: 10px;
+.java-container {
+    display: flex;
+    align-items: center;
+    margin-top: 200px; 
+    margin-bottom: 300px; 
+    margin-left: 470px;
+}
+.cpp-img {
+    width: 190px;
+    height: auto;
+    order: 2; 
+}
+.py-img {
+    width: 400px;
+    height: auto;
+    margin-right: 100px;
+}
+.hc-img {
+    width: 270px;
+    height: auto;
+    order: 2; 
+    margin-left: -90px;
+}
+.java-img {
+    width: 300px;
+    height: auto;
+    margin-right: 185px;
+ 
+}
+.cpp-p {
     background-color: #ffffff;
+    width: 30%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(17, 8, 145); 
+    text-shadow: 1px 1px 1px rgb(0, 85, 170);
+    letter-spacing: 3px;
+    order: 1; 
+    margin-right: 25px; 
+    margin-left: 500px;
+  
+}
+.py-p {
+    background-color: #ffffff;
+    width: 70%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(218, 189, 58); 
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    letter-spacing: 3px;
+  
+}
+.hc-p {
+    background-color: #ffffff;
+    width: 70%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(244, 47, 29); 
+    text-shadow: 1px 1px 1px rgb(4, 4, 4);
+    letter-spacing: 3px;
+    order: 1; 
+
+}
+.java-p {
+    background-color: #ffffff;
+    width: 70%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(159, 25, 23); 
+    text-shadow: 1px 1px 1px rgb(184, 19, 19);
+    letter-spacing: 3px;
+    margin-left: -70px;
+  
+}
+.cpp-container a, .python-container a, .HTMLCSS-container a, .java-container a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.cpp-container a:visited, .python-container a:visited, .HTMLCSS-container a:visited, .java-container a:visited {
+    color: inherit; 
 }
 
 
 
-
-
+/* Other styles remain unchanged */
 /* LANGUAGES STYLING SHEET*/
 
 .topBar{ /* An optional addition to give a modern feel */
@@ -190,6 +294,13 @@
 
 
 /* javaLang styles */
+.main-bodyLang {
+    font-family: Arial, sans-serif;
+    padding-top: 20px; /* Top spacing */
+    text-align: center; 
+    background-color: #ffffffe3 ;
+    align-items: center;
+}
 
 .programLang li{
 font-size: 16px;
@@ -248,6 +359,7 @@ body.signup-body {
     padding-top: 95px; 
     padding-left: 110px;
     height: 100vh;
+    background-color: #ffffffe3 
 }
 .signup-form {
     display: inline-block;

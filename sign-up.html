@@ -44,15 +44,24 @@
        </div>
 
        <div class="main-sidebar">
-         <div class="hamburger">=</div>
-        <ul class="main-sidebar-list">
-            <li><a href="CodeRecall.html">Recall</a></li>
-            <li><a href="languages.html">Languages</a></li>
-            <li><a href="test.html">Test Skills</a></li>
-        </ul>
-    </div>
+         <button class="hamburger">=</button>
+         <ul class="main-sidebar-list">
+             <li><a href="CodeRecall.html">Recall</a></li>
+             <li class="dropdown">
+                 <a href="javascript:void(0)" class="dropbtn">Languages</a>
+                 <div class="dropdown-content">
+                     <a href="languages.html">> Home</a>
+                     <a href="javaLang.html">> Java</a>
+                     <a href="cpp.html">> C++</a>
+                     <a href="cpp.html">> Python</a>
+                     <a href="cpp.html">> HTML</a>
+                 </div>
+             <li><a href="test.html">Test Skills</a></li>
+         </ul>
+     </div>
    
    </form>
    <script src="regex.js"></script>
    <script src="Hamburger.js"></script>
+   <script src="Dropdown.js"></script>
 </body>
