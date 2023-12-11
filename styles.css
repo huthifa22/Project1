@@ -282,13 +282,11 @@
 .programLang a:hover{
     opacity: .5;
 }
-
-#java {background-color: orange;}
-
-#Cplus {
-    background-color: whitesmoke;
-}
 #HTML{background-color:#007BFF;}
+#java {background-color: red;}
+#Cplus {background-color: whitesmoke;}
+#Python {background-color: yellow;}
+
 
 
 
