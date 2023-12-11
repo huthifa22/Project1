@@ -31,7 +31,7 @@
 }
 .main-sidebar {
     width: 118px;  
-    height: 1200px; /*Height of bar*/
+    height: 100%; /*Height of bar*/
     background-color: black;  
     position: fixed; /*Left align bar*/
     top: 0; /*Keeps top and left edge stay*/
@@ -110,28 +110,29 @@
     align-items: center; 
     margin-top: 170px;  
     margin-bottom: 300px;  
+    margin-left: 10px;
 }
 .python-container {
     display: flex;
     align-items: center;
-    margin-top: 200px; 
+    margin-top: 180px; 
     margin-bottom: 300px; 
-    margin-left: 500px;
+    margin-left: 440px;
 }
 .HTMLCSS-container {
     display: flex;
     align-items: center; 
-    margin-bottom: 300px;  
+    margin-bottom: 300px; 
+    margin-top: 250px;  
+    margin-left: 440px;
 }
 .java-container {
     display: flex;
     align-items: center;
     margin-top: 200px; 
     margin-bottom: 300px; 
-    margin-left: 600px;
+    margin-left: 470px;
 }
-
-
 .cpp-img {
     width: 190px;
     height: auto;
@@ -140,20 +141,20 @@
 .py-img {
     width: 400px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 .hc-img {
     width: 270px;
     height: auto;
     order: 2; 
+    margin-left: -90px;
 }
 .java-img {
     width: 300px;
     height: auto;
-    margin-right: 30px;
-    margin-left: -70px;
+    margin-right: 185px;
+ 
 }
-
 .cpp-p {
     background-color: #ffffff;
     width: 30%; 
@@ -163,41 +164,50 @@
     text-shadow: 1px 1px 1px rgb(0, 85, 170);
     letter-spacing: 3px;
     order: 1; 
-    margin-right: 20px; 
+    margin-right: 25px; 
     margin-left: 500px;
+  
 }
 .py-p {
     background-color: #ffffff;
-    width: 30%; 
+    width: 70%; 
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px; 
     color: rgb(218, 189, 58); 
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     letter-spacing: 3px;
+  
 }
 .hc-p {
     background-color: #ffffff;
-    width: 30%; 
+    width: 70%; 
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px; 
     color: rgb(244, 47, 29); 
     text-shadow: 1px 1px 1px rgb(4, 4, 4);
     letter-spacing: 3px;
     order: 1; 
-    margin-right: 20px; 
-    margin-left: 450px;
+
 }
 .java-p {
     background-color: #ffffff;
-    width: 30%; 
+    width: 70%; 
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px; 
     color: rgb(159, 25, 23); 
     text-shadow: 1px 1px 1px rgb(184, 19, 19);
     letter-spacing: 3px;
-    margin-left: 40px;
+    margin-left: -70px;
+  
+}
+.cpp-container a, .python-container a, .HTMLCSS-container a, .java-container a {
+    text-decoration: none; 
+    color: inherit; 
 }
 
+.cpp-container a:visited, .python-container a:visited, .HTMLCSS-container a:visited, .java-container a:visited {
+    color: inherit; 
+}
 
 
 
