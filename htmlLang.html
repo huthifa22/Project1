@@ -52,13 +52,183 @@
             Css Basics:
         </p>
         <ul class="programLang"> 
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Css is basicly a series of cammands that make the webpage display in a unique way</li>
+            <li>Using the "."  "#" or tagname can directly affect the scope of the command</li>
+            <li>Most if not all commands start within curly braces and instruct commands with a :</li>
+            <li>Styles affect everything within the container it is within. Hence the need to give class names or ID</li>
             </ul>
+
+        <p class="codeSnippit">
+            body p &#10100;<br> color: blue; <br> font-family: impact <br> border: 1px, solid, black;
+            &#10101;
+        </p>
+
+        <p>JavaScript not to be confused with Java, is the brain of the webpage. It puts logic into your inputs and text.</br></br>
+            JavaScript Basics:
+        </p>
+        <ul class="programLang"> 
+            <li>Js is the closest you can get to a traditional programming language</li>
+            <li>It is an OOP language relying on functions and methods</li>
+            <li>It has unique event listeners to capture the users interactions with the page</li>
+            <li>One of the downsides of this language is that you can't have overloader constructors</li>
+            </ul>
+
+        <p class="codeSnippit">
+
+            let btn = document.getElementById("button");<br>
+            btn.addEventListener('click' function1);<br><br>
+            function1 &#10100;<br>
+            alert("Event has been triggered");<br>
+            &#10101;
+
+        </p>
+
+        <p>Php is roughly an extension to js as its a traditional programming language with a few quirks</br></br>
+            Php Basics:
+        </p>
+        <ul class="programLang"> 
+            <li>One of Php's defining features is the echo command. It allows for direct DOM modification</li>
+            <li>All declared variables start with the $ symbol and is a dynamic type.</li>
+            <li>It is the preferred method of storing arrays of data</li>
+            <li>Php's second niche is the ability to connect your website to an exteral server and transfer data</li>
+            <li>Strings are concattinated with the . operator</li>
+            </ul>
+
+        <p class="codeSnippit">
+
+            $text = This is a series of letters;<br><br>
+            echo "&lt;p&gt".$text."&lt;/p&gt;"
+        </p>
+        <p>Output =<br>This is a series of letters</p>
+
     </div>
 
+    <div class="questions">
+        <p>The best websites only use Html?</p>
+        <div>
+        <form>
+            <input type="radio" id="q1-1" name="q1"> No, its Php
+        </br>
+            <input type="radio" id="q1-2" name="q1"> No, Its Css
+        </br>
+            <input type="radio" id="q1-3" name="q1"> No, its Js
+        </br>
+            <input type="radio" id="q1-4" name="q1"> They use a bit of everything
+        </br>
+        
+        </form>
+        <button id="q1Check">Submit</button>
+        
 
+        <div class="hide" id="correct1">correct</div>
+        <div class="hide" id="incorrect1">Incorrect</div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <p>What is the main way to modify the style of a website</p>
+        <div>
+        <form>
+            <input type="radio" id="q2-1" name="q2"> Html
+        </br>
+            <input type="radio" id="q2-2" name="q2"> Css
+        </br>
+            <input type="radio" id="q2-3" name="q2"> Js
+        </br>
+            <input type="radio" id="q2-4" name="q2"> Php
+        </br>
+        </form>
+
+        <button id="q2Check">Submit</button>
+
+        <div class="hide" id="correct2">correct</div>
+        <div class="hide" id="incorrect2">Incorrect</div>
+        </div>
+    </div>
+</br>
+<div class="questions">
+    <p>How many of the 4 languages are dynamicly typed?</p>
+    <div>
+    <form>
+        <input type="radio" id="q3-1" name="q3"> 1
+    </br>
+        <input type="radio" id="q3-2" name="q3"> 2
+    </br>
+        <input type="radio" id="q3-3" name="q3"> 3
+    </br>
+        <input type="radio" id="q3-4" name="q3"> 4
+    </br>
+    </form>
+
+    <button id="q3Check">Submit</button>
+
+    <div class="hide" id="correct3">correct</div>
+    <div class="hide" id="incorrect3">Incorrect</div>
+    </div>
+</div>
+
+<div class="questions">
+    <p>How do you concattinate a string in Php</p>
+    <div>
+    <form>
+        <input type="radio" id="q4-1" name="q4"> +
+    </br>
+        <input type="radio" id="q4-2" name="q4"> -
+    </br>
+        <input type="radio" id="q4-3" name="q4"> .
+    </br>
+        <input type="radio" id="q4-4" name="q4"> ?
+    </br>
+    </form>
+
+    <button id="q4Check">Submit</button>
+
+    <div class="hide" id="correct4">correct</div>
+    <div class="hide" id="incorrect4">Incorrect</div>
+    </div>
+</div>
+<br>
+
+<div class="questions">
+    <p>You can make a website with only Html</p>
+    <div>
+    <form>
+        <input type="radio" id="q5-1" name="q5"> True
+    </br>
+        <input type="radio" id="q5-2" name="q5"> False
+    </br>
+     
+    </form>
+
+    <button id="q5Check">Submit</button>
+
+    <div class="hide" id="correct5">correct</div>
+    <div class="hide" id="incorrect5">Incorrect</div>
+    </div>
+</div>
+
+<div class="questions">
+    <p>Php and JavaScript are mutually exclusive</p>
+    <div>
+    <form>
+        <input type="radio" id="q6-1" name="q6"> True
+    </br>
+        <input type="radio" id="q6-2" name="q6"> False
+    </br>
+
+    </form>
+
+    <button id="q6Check">Submit</button>
+
+    <div class="hide" id="correct6">correct</div>
+    <div class="hide" id="incorrect6">Incorrect</div>
+    </div>
+</div>
+
+
+
+<script src="htmlLang.js"></script>
+<script src="auth.js"></script>
+<script src="Hamburger.js"></script>
 
 </body>
