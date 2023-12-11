@@ -8,6 +8,28 @@
     <div class="main-logo">
         CodeRecall
     </div>
+    <div class="image-links">
+        <div class="cpp-container">
+            <img src="cpp.PNG" alt="CPP" class="cpp-img">
+            <p class="cpp-p">Forgot this one?</p>
+        </div>
+        <div class="python-container">
+            <img src="python.png" alt="Python" class="py-img">
+            <p class="py-p">Or this one?</p>
+        </div>
+        <div class="HTMLCSS-container">
+            <img src="hc.jpg" alt="Python" class="hc-img">
+            <p class="hc-p">Or maybe even this one?</p>
+        </div>
+        <div class="java-container">
+            <a href="javaLang.html">
+                <img src="java.png" alt="Java" class="java-img">
+            </a>
+            <p class="java-p">Out of Bounds Exception</p>
+        </div>
+    </div>
+    
+
     <div class="main-login">
         <a href="sign-in.html" class="main-login-link" id="signInLink">Sign In</a>
         <a href="sign-up.html" class="main-login-link" id="signUpLink">Sign Up</a>
@@ -20,20 +42,30 @@
         <button class="hamburger">=</button>
         <ul class="main-sidebar-list">
             <li><a href="CodeRecall.html">Recall</a></li>
-            <li><a href="languages.html">Languages</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Languages</a>
+                <div class="dropdown-content">
+                    <a href="languages.html">> Home</a>
+                    <a href="javaLang.html">> Java</a>
+                    <a href="cpp.html">> C++</a>
+                    <a href="cpp.html">> Python</a>
+                    <a href="cpp.html">> HTML</a>
+                </div>
             <li><a href="test.html">Test Skills</a></li>
         </ul>
     </div>
-    <div class="main-content">
-        <div class="about-us-wrapper">
-            <div class="about-us">
-                <h2 class="main-about-section"></h2>
-                <p class="about-us-p"><br></p>
+    <!-- <div class="main-content">
+            <div class="java-D">
+                <p class="java-p"><br> Forgot this one again?....</p>
+            </div>
+            <div class="cpp-D">
+                <p class="cpp-p"><br> Or this one?</p>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 <script src="auth.js"></script>
 <script src="Hamburger.js"></script>
+<script src="Dropdown.js"></script>
 </body>
 </html>

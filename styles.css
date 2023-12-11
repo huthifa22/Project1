@@ -3,17 +3,20 @@
     font-family: Arial, sans-serif;
     padding-top: 20px; /* Top spacing */
     text-align: center; 
-    background-color: #ffffff ;
+    background-color: rgb(255, 255, 255);
     align-items: center;
 }
 .main-logo {
     font-size: 40px; 
     font-weight: 500;
-    padding-left: 110px;
-    color:black; 
-    text-shadow: 1px 1px 2px black;
+    padding-left: 140px;
+    color: rgb(0, 0, 0); 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     letter-spacing: 2px;
+    /* border-bottom: .5px solid rgb(164, 164, 164); */
+    padding-bottom: 5px;
 }
+
 .main-login {
     position: absolute; 
     top: 10px; 
@@ -69,45 +72,136 @@
     display: none; 
 }
 
+/* Dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding-left: 12px;
+    padding-bottom: 7px;
+    padding-top: 9px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+
+}
+.dropdown-content {
+    display: none;
+    border-radius: 8px;
+    background-color: #181414;
+    width: 90px;
+
+}
+.dropdown-content.show {
+    display: block;
+}
 
 
 /* MAIN CONTENT HOMEPAGE */
-
 .main-content {
     padding-left: 140px;  
     padding-top: 20px; 
     padding-right: 10px; 
     justify-content: center;
 }
-.main-about-section {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 34px;
-    color: rgb(191, 31, 31);
 
+.cpp-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 170px;  
+    margin-bottom: 300px;  
+}
+.python-container {
+    display: flex;
+    align-items: center;
+    margin-top: 200px; 
+    margin-bottom: 300px; 
+    margin-left: 500px;
+}
+.HTMLCSS-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 300px;  
+}
+.java-container {
+    display: flex;
+    align-items: center;
+    margin-top: 200px; 
+    margin-bottom: 300px; 
+    margin-left: 600px;
 }
 
-.about-us-p{
-    text-align: left;
-    padding-left: 20px;
-    font-size: 23px;
+
+.cpp-img {
+    width: 190px;
+    height: auto;
+    order: 2; 
 }
-.about-us-wrapper {
-    background-color: white; 
-    margin-right: 50px; 
+.py-img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+.hc-img {
+    width: 270px;
+    height: auto;
+    order: 2; 
+}
+.java-img {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    margin-left: -70px;
 }
 
-.about-us {
-    margin-top: 30px;
-    border: 1px solid gray;
-    border-radius: 10px;
+.cpp-p {
     background-color: #ffffff;
+    width: 30%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(17, 8, 145); 
+    text-shadow: 1px 1px 1px rgb(0, 85, 170);
+    letter-spacing: 3px;
+    order: 1; 
+    margin-right: 20px; 
+    margin-left: 500px;
+}
+.py-p {
+    background-color: #ffffff;
+    width: 30%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(218, 189, 58); 
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+.hc-p {
+    background-color: #ffffff;
+    width: 30%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(244, 47, 29); 
+    text-shadow: 1px 1px 1px rgb(4, 4, 4);
+    letter-spacing: 3px;
+    order: 1; 
+    margin-right: 20px; 
+    margin-left: 450px;
+}
+.java-p {
+    background-color: #ffffff;
+    width: 30%; 
+    font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px; 
+    color: rgb(159, 25, 23); 
+    text-shadow: 1px 1px 1px rgb(184, 19, 19);
+    letter-spacing: 3px;
+    margin-left: 40px;
 }
 
 
 
 
-
+/* Other styles remain unchanged */
 /* LANGUAGES STYLING SHEET*/
 
 .topBar{ /* An optional addition to give a modern feel */
@@ -189,6 +283,13 @@
 
 
 /* javaLang styles */
+.main-bodyLang {
+    font-family: Arial, sans-serif;
+    padding-top: 20px; /* Top spacing */
+    text-align: center; 
+    background-color: #ffffffe3 ;
+    align-items: center;
+}
 
 .javaLang li{
 font-size: 16px;
@@ -248,6 +349,7 @@ body.signup-body {
     padding-top: 95px; 
     padding-left: 110px;
     height: 100vh;
+    background-color: #ffffffe3 
 }
 .signup-form {
     display: inline-block;

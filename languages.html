@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="main-body"> 
+<body class="main-bodyLang"> 
     <div class="main-login">
         <a href="sign-in.html" class="main-login-link" id="signInLink">Sign In</a>
         <a href="sign-up.html" class="main-login-link" id="signUpLink">Sign Up</a>
@@ -14,10 +14,18 @@
         </div>
     </div>
     <div class="main-sidebar">
-        <div class="hamburger">=</div>
+        <button class="hamburger">=</button>
         <ul class="main-sidebar-list">
             <li><a href="CodeRecall.html">Recall</a></li>
-            <li><a href="languages.html">Languages</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Languages</a>
+                <div class="dropdown-content">
+                    <a href="languages.html">> Home</a>
+                    <a href="javaLang.html">> Java</a>
+                    <a href="cpp.html">> C++</a>
+                    <a href="cpp.html">> Python</a>
+                    <a href="cpp.html">> HTML</a>
+                </div>
             <li><a href="test.html">Test Skills</a></li>
         </ul>
     </div>
@@ -52,4 +60,5 @@
 
     <script src="auth.js"></script>
     <script src="Hamburger.js"></script>
+    <script src="Dropdown.js"></script>
 </body>
