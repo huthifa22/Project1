@@ -179,27 +179,25 @@
     opacity: .5;
 }
 
-/* ID values to further alter the tiles. Ex. Giving them images
-#java {}
+#java {background-color: orange;}
 #python{}
 #cPlus{}
-#HTML{}
+#HTML{background-color:#007BFF;}
 #ect{}
-*/
+
 
 
 /* javaLang styles */
 
-.javaLang li{
+.programLang li{
 font-size: 16px;
 margin-bottom: 5px;
 }
 
-.codeSnippit p{
+.codeSnippit {
     font-family:'Courier New', Courier, monospace;
     text-align: left;
     margin-top: 20px;
-    background-color: beige;
     padding-left: 20px;
 }
 
